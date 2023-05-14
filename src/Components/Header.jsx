@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import {  FaShoppingCart } from 'react-icons/fa';
 
 const Header = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -8,7 +9,7 @@ const Header = () => {
       setMobileMenuOpen(!isMobileMenuOpen);
     };
     return (
-        <div className='max-w-7xl mx-auto'>
+        <div className='w-10/12 mx-auto py-5'>
              <nav className="flex items-center justify-between p-4 bg-[#F)F$EC]">
       {/* Logo */}
       <div className="flex items-center">
@@ -17,10 +18,10 @@ const Header = () => {
 
       {/* Menu */}
       <div className="hidden md:flex space-x-4">
-        <a href="#" className="hover:text-gray-300">Home</a>
-        <a href="#" className="hover:text-gray-300">Blog</a>
-        <a href="#" className="hover:text-gray-300">About Us</a>
-        <a href="#" className="hover:text-gray-300">Menu 4</a>
+        <a href="#" className=" p-3 rounded-md hover:bg-green-700 hover:text-white ">Home</a>
+        <a href="#" className="p-3 rounded-md hover:bg-green-700 hover:text-white ">Blog</a>
+        <a href="#" className="p-3 rounded-md hover:bg-green-700 hover:text-white ">About Us</a>
+        <a href="#" className="p-3 rounded-md hover:bg-green-700 hover:text-white ">En</a>
       </div>
 
       {/* Mobile Menu */}
@@ -49,21 +50,21 @@ const Header = () => {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="absolute top-0 right-0 mt-12 bg-gray-900 text-white py-2 px-4">
-            <a href="#" className="block my-2 hover:text-gray-300">Home</a>
-            <a href="#" className="block my-2 hover:text-gray-300">Blog</a>
-            <a href="#" className="block my-2 hover:text-gray-300">About</a>
-            <a href="#" className="block my-2 hover:text-gray-300">Menu 4</a>
+            <a href="#" className="block p-3  hover:bg-green-700 ">Home</a>
+            <a href="#" className="block p-3  hover:bg-green-700">Blog</a>
+            <a href="#" className="block p-3 hover:bg-green-700">About</a>
+            
           </div>
         )}
       </div>
 
       {/* Login and Cart Buttons */}
       <div className="hidden md:flex space-x-4">
-        <button className="border border-white rounded-lg py-2 px-4 text-sm hover:bg-white hover:text-gray-900">
+        <button className="border bg-green-700 border-white rounded-full py-2 text-white px-4 text-sm hover:bg-green-300 hover:text-black">
           Login
         </button>
-        <button className="border border-white rounded-lg py-2 px-4 text-sm hover:bg-white hover:text-gray-900">
-          Cart
+        <button className="border bg-green-700 text-white rounded-full py-4 px-4 text-sm hover:bg-green-300 hover:text-black">
+        <FaShoppingCart />
         </button>
       </div>
     </nav>

@@ -1,0 +1,15 @@
+.cycle-rider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: move 5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes move {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(20%);
+    }
+  }
