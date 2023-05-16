@@ -4,14 +4,14 @@ import  "./About.css"
 const About = () => {
   return (
     <div>
-      <section className="flex flex-col-reverse md:flex-row items-center justify-between py-12 px-4  w-10/12 mx-auto">
+      <section className="flex flex-col-reverse md:flex-row items-center justify-between  px-4  w-10/12 mx-auto">
         {/* Left Content */}
         <div className="md:w-1/2">
           <h2 className="text-4xl font-bold mb-4 text-green-600">Explore your favourite city’s food.</h2>
           <p className="font-bold mb-6 ">
             Lorem ipsum dolor sit amet consectetur. Ornare massa nunc nibh tristique. Non ligula tristique ut ut libero sit convallis maecenas. At egestas auctor porta mattis.
           </p>
-          <button className="bg-green-700 text-white font-bold rounded-full py-2 px-4">
+          <button className="border bg-green-700 font-bold border-white rounded-full py-2 text-white px-4 text-sm hover:bg-green-300 hover:text-black">
             Explore
           </button>
         </div>

@@ -18,10 +18,10 @@ const Header = () => {
 
       {/* Menu */}
       <div className="hidden md:flex space-x-4">
-        <a href="#" className=" p-3 rounded-md hover:bg-green-700 hover:text-white ">Home</a>
-        <a href="#" className="p-3 rounded-md hover:bg-green-700 hover:text-white ">Blog</a>
-        <a href="#" className="p-3 rounded-md hover:bg-green-700 hover:text-white ">About Us</a>
-        <a href="#" className="p-3 rounded-md hover:bg-green-700 hover:text-white ">En</a>
+        <a href="#" className=" p-3 font-bold rounded-md hover:bg-green-700 hover:text-white ">Home</a>
+        <a href="#" className="p-3 font-bold rounded-md hover:bg-green-700 hover:text-white ">Blog</a>
+        <a href="#" className="p-3 font-bold rounded-md hover:bg-green-700 hover:text-white ">About Us</a>
+        <a href="#" className="p-3 font-bold rounded-md hover:bg-green-700 hover:text-white ">En</a>
       </div>
 
       {/* Mobile Menu */}
@@ -50,9 +50,9 @@ const Header = () => {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="absolute top-0 right-0 mt-12 bg-gray-900 text-white py-2 px-4">
-            <a href="#" className="block p-3  hover:bg-green-700 ">Home</a>
-            <a href="#" className="block p-3  hover:bg-green-700">Blog</a>
-            <a href="#" className="block p-3 hover:bg-green-700">About</a>
+            <a href="#" className="block p-3 font-bold hover:bg-green-700 ">Home</a>
+            <a href="#" className="block p-3 font-bold  hover:bg-green-700">Blog</a>
+            <a href="#" className="block p-3 font-bold hover:bg-green-700">About</a>
             
           </div>
         )}
@@ -60,7 +60,7 @@ const Header = () => {
 
       {/* Login and Cart Buttons */}
       <div className="hidden md:flex space-x-4">
-        <button className="border bg-green-700 border-white rounded-full py-2 text-white px-4 text-sm hover:bg-green-300 hover:text-black">
+        <button className="border bg-green-700 font-bold border-white rounded-full py-2 text-white px-4 text-sm hover:bg-green-300 hover:text-black">
           Login
         </button>
         <button className="border bg-green-700 text-white rounded-full py-4 px-4 text-sm hover:bg-green-300 hover:text-black">
